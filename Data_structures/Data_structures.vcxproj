@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1e4df9d9-6037-49d4-9cb3-86a380a7275a}</ProjectGuid>
+    <RootNamespace>Datastructures</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dataStructures\Search.cpp" />
+    <ClCompile Include="dataStructures\Sort.cpp" />
+    <ClCompile Include="Draft\draft.cpp" />
+    <ClCompile Include="LeetCode\Array\1.twoNum.cpp" />
+    <ClCompile Include="LeetCode\Array\209.minSubArrayLen.cpp" />
+    <ClCompile Include="LeetCode\Array\26.removeDuplicates.cpp" />
+    <ClCompile Include="LeetCode\Array\27.removeElement.cpp" />
+    <ClCompile Include="LeetCode\Array\283.moveZeroes.cpp" />
+    <ClCompile Include="LeetCode\Array\53.maxSubArray.cpp" />
+    <ClCompile Include="LeetCode\Array\88.merge.cpp" />
+    <ClCompile Include="LeetCode\BinaryTree\102.levelOrder.cpp" />
+    <ClCompile Include="LeetCode\BinaryTree\104.maxDepth.cpp" />
+    <ClCompile Include="LeetCode\BinaryTree\144.preorderTraversal.cpp" />
+    <ClCompile Include="LeetCode\BinaryTree\145.postorderTraversal.cpp" />
+    <ClCompile Include="LeetCode\BinaryTree\226.invertTree.cpp" />
+    <ClCompile Include="LeetCode\BinaryTree\236.lowestCommonAncestor.cpp" />
+    <ClCompile Include="LeetCode\BinaryTree\94.inorderTraversal.cpp" />
+    <ClCompile Include="dataStructures\Graph.cpp" />
+    <ClCompile Include="dataStructures\Tree.cpp" />
+    <ClCompile Include="dataStructures\KMP.cpp" />
+    <ClCompile Include="dataStructures\LinkList.cpp" />
+    <ClCompile Include="dataStructures\queue.cpp" />
+    <ClCompile Include="dataStructures\SequenceList.cpp" />
+    <ClCompile Include="dataStructures\Stack.cpp" />
+    <ClCompile Include="dataStructures\String.cpp" />
+    <ClCompile Include="LeetCode\Graph\200.numIslands.cpp" />
+    <ClCompile Include="LeetCode\Graph\207.canFinish.cpp" />
+    <ClCompile Include="LeetCode\Graph\695.maxAreaOfIsland.cpp" />
+    <ClCompile Include="LeetCode\Graph\994.orangesRotting.cpp" />
+    <ClCompile Include="LeetCode\Hash\1.towSum.cpp" />
+    <ClCompile Include="LeetCode\Hash\128.class Solution {.cpp" />
+    <ClCompile Include="LeetCode\Hash\242.isAnagram.cpp" />
+    <ClCompile Include="LeetCode\Hash\349.intersection.cpp" />
+    <ClCompile Include="LeetCode\Hash\49.groupAnagrams.cpp" />
+    <ClCompile Include="LeetCode\Heap\215.findKthLargest.cpp" />
+    <ClCompile Include="LeetCode\Heap\23.mergeKLists.cpp" />
+    <ClCompile Include="LeetCode\Heap\347.topKFrequent.cpp" />
+    <ClCompile Include="LeetCode\LinkedList\141.hasCycle.cpp" />
+    <ClCompile Include="LeetCode\LinkedList\142.detecCycle.cpp" />
+    <ClCompile Include="LeetCode\LinkedList\19.removeNthFromEnd.cpp" />
+    <ClCompile Include="LeetCode\LinkedList\203.removeElements.cpp" />
+    <ClCompile Include="LeetCode\LinkedList\206.reverseList.cpp" />
+    <ClCompile Include="LeetCode\LinkedList\21.mergeTwoLists.cpp" />
+    <ClCompile Include="LeetCode\StackQueue\155.MinStack.cpp" />
+    <ClCompile Include="LeetCode\StackQueue\20.isValid.cpp" />
+    <ClCompile Include="LeetCode\StackQueue\232.MyQueue.cpp" />
+    <ClCompile Include="LeetCode\StackQueue\739.dailyTemperatures.cpp" />
+    <ClCompile Include="LeetCode\StackQueue\84.largestRectangleArea.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
